@@ -1,25 +1,154 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewspot" content="width=device-width, initial-scale=1.0"
-    <title>Website Matematik - Syifa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">"
+    <title>Website Matematik-Syifa</title>
 
     <!-- CSS External -->
-     <link rel="stylesheet" href="css\style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Head Content -->
-    <header></header>
+    <header>
+        <h1>Welcome to Katik</h1>
+            <p>Hitung luas dan keliling bangun datar lebih cepat dan mudah tanpa perlu rumus di atas kertas.
+            Website ini menyediakan kalkulator online untuk berbagai bentuk seperti segitiga, persegi panjang, lingkaran, dan lainnya. Cukup masukkan angka, klik tombol hitung, dan hasilnya langsung muncul. Akurat, praktis, dan gratis.
+            </p>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#segitiga">Segitiga</a>
+            <a href="#persegipanjang">Persegi Panjang</a>
+        </nav>
+    </header>
 
     <!-- Main Content -->
-    <main></main>
-    
+    <main class="grid-container">
+        <!-- Segitiga -->
+        <!-- Luas Segitiga -->
+        <section class="segitiga luas">
+            <header>
+                <h2>Luas Segitiga</h2>
+            </header>
+            <!-- Konten Luas Segitiga -->
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/11/b9/22/11b9223354ab7c819f78393f477716a7.jpg" alt="Rumus Luas Segitiga">
+                <p>Rumus: 1/2 x Alas x Tinggi</p>
+            </div>
+
+            <!-- Form Luas Segitiga -->
+            <form>
+                <div>
+                    <label for="alas-segitiga">Alas:</label>
+                    <input type="number" id="alas-segitiga" name="alas" placeholder="Masukkan Alas">
+                </div>
+                <div>
+                    <label for="tinggi-segitiga">Tinggi:</label>
+                    <input type="number" id="tinggi-segitiga" name="tinggi" placeholder="Masukkan Tinggi">
+                </div>
+                <div>
+                    <button type="submit">Hitung</button>
+                    <button type="reset" id="reset-keliling">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Keliling Segitiga -->
+        <section class="segitiga keliling">
+            <header>
+                <h2>Keliling Segitiga</h2>
+            </header>
+            <!-- Konten Keliling Segitiga -->
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/11/b9/22/11b9223354ab7c819f78393f477716a7.jpg" alt="Rumus Keliling Segitiga">
+                <p>Rumus: Sisi A + Sisi B + Sisi C</p>
+            </div>
+            
+            <!-- Form Keliling Segitiga -->
+            <form>
+                <div>
+                    <label for="sisi-a-segitiga">Sisi A:</label>
+                    <input type="number" id="sisi-a-segitiga" name="sisi-a" placeholder="Masukkan Sisi A">
+                </div>
+                <div>
+                    <label for="sisi-b-segitiga">Sisi B:</label>
+                    <input type="number" id="sisi-b-segitiga" name="sisi-b" placeholder="Masukkan Sisi B">
+                </div>
+                <div>
+                    <label for="sisi-c-segitiga">Sisi C:</label>
+                    <input type="number" id="sisi-c-segitiga" name="sisi-c" placeholder="Masukkan Sisi C">
+                </div>
+                <div>
+                    <button type="submit">Hitung</button>
+                    <button type="reset" id="reset-keliling">Reset</button>
+                </div>
+            </form>
+        </section>
+        <!-- Persegi Panjang -->
+        <!-- Luas Persegi Panjang -->
+        <section class="persegipanjang luas">
+            <header>
+                <h2>Luas Persegi Panjang</h2>
+            </header>
+
+            <!-- Konten Persegi Panjang -->
+            <div class="image-container">
+                <img src="https://pulpent.com/wp-content/uploads/2021/10/Rumus-Luas-Persegi-Panjang.png.webp" alt="Rumus Luas Persegi Panjang">
+                <p>Rumus: Panjang x Lebar</p>
+            </div>
+
+            <!-- Form Persegi Panjang -->
+            <form>
+                <div>
+                    <label for="panjang">Panjang:</label>
+                    <input type="number" id="panjang" name="panjang" placeholder="Masukkan Panjang">
+                </div>
+                <div>
+                    <label for="lebar">Lebar:</label>
+                    <input type="number" id="lebar" name="lebar" placeholder="Masukkan Lebar">
+                </div>
+                <div>
+                    <button type="submit">Hitung</button>
+                    <button type="reset" id="reset-keliling">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Keliling Persegi Panjang -->
+        <section class="persegipanjang keliling">
+            <header>
+                <h2>Keliling Persegi Panjang</h2>
+            </header>
+
+            <!-- Konten Persegi Panjang -->
+            <div class="image-container">
+                <img src="https://pulpent.com/wp-content/uploads/2021/10/Rumus-Luas-Persegi-Panjang.png.webp" alt="Rumus Keliling Persegi Panjang">
+                <p>Rumus: 2 x (Panjang + Lebar)</p>
+            </div>
+           
+            <!-- Form Keliling Persegi Panjang -->
+            <form>
+                <div>
+                    <label for="panjang-keliling">Panjang:</label>
+                    <input type="number" id="panjang-keliling" name="panjang" placeholder="Masukkan Panjang">
+                </div>
+                <div>
+                    <label for="lebar-keliling">Lebar:</label>
+                    <input type="number" id="lebar-keliling" name="lebar" placeholder="Masukkan Lebar">
+                </div>
+                <div>
+                    <button type="submit">Hitung</button>
+                    <button type="reset" id="reset-keliling">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
     <!-- Footer Content -->
-    <footer></footer>
-
+    <footer>
+        <p>© 2025 Syifa. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
