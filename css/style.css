@@ -83,7 +83,7 @@ main.grid-container {
 }
 
 section header h2 {
-    font-size: 1.8em;
+    font-size: 20px;
     margin-bottom: 15px;
     padding: 0;
     color: white; 
@@ -121,7 +121,7 @@ form {
 }
 
 form div {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 100%;
     max-width: 300px;
 }
@@ -137,14 +137,47 @@ input[type="number"] {
     background-color: #f9f9f9;
 }
 
-form button {
-    margin: 20px;
-    background-color: #3498db;
+form div:last-child {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.button-hitung {
+    background-color: #2980b9;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 5px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
+}
+
+.button-hitung:hover {
+    background-color:#0056b3;
+    transform: scale(1.05);
+}
+
+.button-reset {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-reset:hover {
+    background-color:#b02a37;
+    transform: scale(1.05);
 }
 
 footer {
